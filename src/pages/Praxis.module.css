@@ -108,29 +108,21 @@
   background: rgba(0, 0, 0, 0.6);
   z-index: 100;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  padding: 20px;
+  padding: 50px 16px 16px;
+  overflow-y: auto;
 }
 .modalWrapper {
   position: relative;
   max-width: 600px;
   width: 100%;
+  margin: 0 auto;
 }
-.modal {
-  background: #faf7f2;
-  border-radius: 8px;
-  max-width: 600px;
-  width: 100%;
-  max-height: 88vh;
-  overflow-y: auto;
-  position: relative;
-  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
-}
-modalClose {
+.modalClose {
   position: absolute;
-  top: -12px;
-  right: -12px;
+  top: -36px;
+  right: 0px;
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -152,8 +144,6 @@ modalClose {
   background: #faf7f2;
   border-radius: 8px;
   width: 100%;
-  max-height: 88vh;
-  overflow-y: auto;
   box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
 }
 .modalImgWrap {

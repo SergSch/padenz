@@ -1,0 +1,221 @@
+.page {
+  font-family: Georgia, 'Times New Roman', serif;
+  color: #2a2a2a;
+}
+
+/* HERO */
+.hero {
+  background: #f5efe6;
+  padding: 56px 24px 44px;
+  text-align: center;
+  border-bottom: 1px solid #e0d4c4;
+}
+.heroTitle {
+  font-size: clamp(1.6rem, 4vw, 2.6rem);
+  font-weight: 700;
+  color: #2a2a2a;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+.heroSub {
+  font-size: clamp(1rem, 2.5vw, 1.4rem);
+  color: #7a6a5a;
+  font-style: italic;
+  margin-bottom: 28px;
+  letter-spacing: 2px;
+}
+.heroContact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.heroContactLabel {
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+  font-style: italic;
+  color: #5a4a3a;
+  font-family: 'Palatino Linotype', Palatino, Georgia, serif;
+  letter-spacing: 1px;
+}
+.contactLink {
+  font-size: clamp(0.95rem, 2vw, 1.15rem);
+  color: #4a7c30;
+  font-weight: 600;
+  text-decoration: none;
+  font-family: Georgia, serif;
+}
+.contactLink:hover {
+  text-decoration: underline;
+}
+
+/* PHILOSOPHIE */
+.philosophie {
+  background: #faf7f2;
+  padding: 60px 24px;
+}
+.philInner {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  gap: 48px;
+  align-items: center;
+}
+.philImage {
+  flex: 0 0 280px;
+}
+.svg {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+}
+.philText {
+  flex: 1;
+}
+.philTitle {
+  font-size: clamp(1.3rem, 3vw, 2rem);
+  font-weight: 700;
+  color: #2a2a2a;
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+.philPara {
+  font-size: 1.05rem;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 12px;
+}
+
+/* LEISTUNGEN */
+.leistungen {
+  background: #f5efe6;
+  padding: 60px 24px;
+}
+.leistInner {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.leistTitle {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 700;
+  color: #2e7d32;
+  margin-bottom: 32px;
+}
+.leistList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.leistItem {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding-left: 16px;
+  border-left: 3px solid #a5e08d;
+}
+.leistName {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #2a2a2a;
+}
+.leistDesc {
+  font-size: 0.9rem;
+  color: #777;
+  font-style: italic;
+}
+
+/* PHILOSOPHIE 2 */
+.phil2 {
+  background: #faf7f2;
+  padding: 70px 24px;
+  text-align: center;
+}
+.phil2Text {
+  font-size: clamp(1.2rem, 3vw, 1.7rem);
+  font-weight: 700;
+  color: #2a2a2a;
+  margin-bottom: 16px;
+}
+.phil2Sub {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 0;
+}
+.phil2Divider {
+  width: 60px;
+  height: 2px;
+  background: #a5e08d;
+  margin: 32px auto;
+}
+.phil2Claim {
+  font-size: clamp(1.4rem, 3.5vw, 2.2rem);
+  font-weight: 700;
+  color: #151615;
+  font-style: italic;
+  margin-top: 8px;
+}
+
+/* CTA */
+.cta {
+  background: #6a875b;
+  padding: 56px 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.ctaBtn {
+  background: #a5e08d;
+  color: #1b4a0a;
+  padding: 14px 40px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition:
+    background 0.3s,
+    transform 0.2s;
+  font-family: Georgia, serif;
+}
+.ctaBtn:hover {
+  background: #8dd475;
+  transform: translateY(-2px);
+}
+.ctaLinks {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.ctaLink {
+  color: #e8f5e9;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+.ctaLink:hover {
+  text-decoration: underline;
+}
+.ctaDot {
+  color: #c8e6c9;
+}
+
+/* RESPONSIVE */
+@media (max-width: 700px) {
+  .philInner {
+    flex-direction: column;
+  }
+  .philImage {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+  .leistTitle {
+    text-align: center;
+  }
+}

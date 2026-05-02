@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import logo from '../../images/logo.png';
 import classes from './SubHeader.module.css';
 import { ROUTES } from './../../utils/routes';
 import { useRef, useState } from 'react';
@@ -12,19 +11,13 @@ const SubHeader = () => {
   const menuRef = useRef(null);
 
   useClickOutside(menuRef, () => {
-    if (isOpen) {
-      setIsOpen(false);
-    }
+    if (isOpen) setIsOpen(false);
   });
 
   return (
     <div className={classes.subWrapper}>
       <div className="container">
         <div className={classes.subHeader_container}>
-          <Link to={ROUTES.HOME}>
-            <img src={logo} alt="Logo" className={classes.logo} />
-          </Link>
-
           <nav
             ref={menuRef}
             className={`${classes.nav} ${isOpen ? classes.active : ''}`}
@@ -36,28 +29,25 @@ const SubHeader = () => {
             />
             <ul className={classes.navigation}>
               <li>
-                <Link to={ROUTES.HOME} className={classes.link}>
-                  Home
+                <Link
+                  to={ROUTES.ABOUT}
+                  className={classes.link}
+                  onClick={() => setIsOpen(false)}
+                >
+                  Über uns
                 </Link>
               </li>
               <li>
-                <Link to={ROUTES.ABOUT} className={classes.link}>
-                  About Us
-                </Link>
-              </li>
-              <li>
-                <Link to={ROUTES.GALEREA} className={classes.link}>
-                  Galerea
-                </Link>
-              </li>
-              <li>
-                <Link to={ROUTES.PRAXIS} className={classes.link}>
-                  Praxis
+                <Link
+                  to={ROUTES.PRAXIS}
+                  className={classes.link}
+                  onClick={() => setIsOpen(false)}
+                >
+                  Unsere Leistungen
                 </Link>
               </li>
             </ul>
           </nav>
-
           <button
             className={classes.menu_button}
             onClick={() => setIsOpen(!isOpen)}

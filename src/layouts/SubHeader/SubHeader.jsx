@@ -30,6 +30,15 @@ const SubHeader = () => {
             <ul className={classes.navigation}>
               <li>
                 <Link
+                  to={ROUTES.HOME}
+                  className={classes.link}
+                  onClick={() => setIsOpen(false)}
+                >
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link
                   to={ROUTES.ABOUT}
                   className={classes.link}
                   onClick={() => setIsOpen(false)}
